@@ -1,0 +1,19 @@
+
+
+  // Generating a new project \\
+
+1. npx create-react-app <project name>
+
+2. To Start your project:
+        1. cd into the project folder
+        2. run npm start
+
+3. To View your project:
+        1. open your browser and navigate to
+           localhost:3000
+
+4. To Stop your project:
+        1. ctrl + c
+
+Since the bower does not run JSX the terminal(using the Dev Sever)
+will convert Js into JSX for us using 
