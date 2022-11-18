@@ -67,19 +67,33 @@ root.render(<App/>);
 
 // REQUESTONG A NUMBER INPUT FROM USER IN A COMPONENT \\
 
-function App() {
-    const inputType = "number";
-    const minValue = 5;
+// function App() {
+//     const inputType = "number";
+//     const minValue = 5;
 
-    return <input style={{border: "3px solid red"}}
-            type={inputType} 
-            min={minValue} 
-        />;
-}
+//     return <input style={{border: "3px solid red"}}  // style is an object 
+//             type={inputType}     
+//             min={minValue} 
+//         />;
+// }
 // Setting the min value to 5 here will never allow the 
 //value to go below 5 in the browser. try in broswer. 
 
 // // the varialbe can also be written directly in the return statement
 // return <input type="number" min={5} />;
+
+
+// Component to AUTOFOCUS IN A TEXT AREA using boolean true
+function App() {
+    return <textarea autoFocus/>    // NOTE the syntax
+}
+// NOTE for boolean false curley braces MUST be used
+//    autoFocus={false}
+
+// Component to spellCheck
+function App() {
+    return <input spellCheck />;
+}
+
 
 
