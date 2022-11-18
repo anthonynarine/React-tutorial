@@ -16,4 +16,59 @@
         1. ctrl + c
 
 Since the bower does not run JSX the terminal(using the Dev Sever)
-will convert Js into JSX for us using 
+will convert Js into JSX for us. (see diagram in assets folder)
+
+
+5. Files and Folders to Delete
+    ~ public directory 
+        favicon
+        both logos
+        manifest 
+        robot :(
+        Do NOT delete index.html
+    
+    ~ src directory 
+        delete ALL files
+        Create index.js file 
+            This is the first file to be executed in the browser
+            This is also the place we Create a Component to show
+            on the scree. 
+
+
+6. Creating a Component:
+    1) Import the React and ReactDOM Libraries
+        import React from 'react'; 
+        import ReactDOM from "react-dom/client";
+we need the above libraries to show a component on the screen
+            A) The React library defines what a component is
+               and how multiple components work
+            B) The ReactDOM library know how to get a component
+               to show up in the browser
+
+    2) Get a refrence to the div with id root
+        public directory line 31. This HTML file is the first 
+        that gets loaded up into the browser, and then this file
+        causes our bundled args files to eventually be loaded as well.
+        see startup diagram.
+
+        we give the below refrence to the div in the above file
+        to tell React we want our application to show up inside that 
+        element. This is done with the ReactDOM library
+
+         const el = document.getElementById("root");
+
+    3) Tell React to take control of that element
+
+         const root = ReactDOM.createRoot(el);
+
+    4)  Create a component
+
+        components are just functions that return JSX
+    
+    function App() {
+        return <h1>Hi there!</h1>
+    }
+
+    5) Show the component on the screen. 
+    root.render(<App/>);  
+        APP is passed in as a JSX element
