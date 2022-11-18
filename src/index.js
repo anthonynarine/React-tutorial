@@ -22,11 +22,22 @@ root.render(<App/>);
 // what to show on the screen. 
 
 //4)  Create a component  // Modifying from above
-function App() {
-    let message = "Goodbye!"
-    if (Math.random() > 0.5) {
-        message = "Hell there"
-    }
-       return <h1>{message}</h1>  //note the syntax 
+// function App() {
+//     let message = "Goodbye!"
+//     if (Math.random() > 0.5) {
+//         message = "Hell there"
+//     }
+//        return <h1>{message}</h1>  //note the syntax 
     //The curly braces tell React to go find the inserted varialbe
-   }
+//    }
+//refreshing the screen will toggle between hello there and good //4)  Create a component
+// function App() {
+//  //only returned elements will show up in the browser
+//     return <h1>Hi there!</h1>
+// }
+
+function App() {
+    const date = new Date();
+    const time = date.toLocaleTimeString(); 
+        return <h1>{time}</h1>
+}
