@@ -1,5 +1,5 @@
 function App() {
-    return <h1>Hell from inside my new home App.js</h1>
+    return <h1>Hello Julia</h1>
 }
 
 export default App;
