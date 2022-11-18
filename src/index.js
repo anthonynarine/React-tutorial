@@ -31,29 +31,49 @@ root.render(<App/>);
     //The curly braces tell React to go find the inserted varialbe
 //    }
 //refreshing the screen will toggle between hello there and good //4)  Create a component
+
+
 // function App() {
-//  //only returned elements will show up in the browser
+//  //only returned elements will show up in the browser \\
 //     return <h1>Hi there!</h1>
 // }
 
-// funciton to display local time
+
+// DISPLAYING YOUR LOCAL TIME COMPONENT \\
+
 // function App() {
 //     const date = new Date();
 //     const time = date.toLocaleTimeString(); 
 //         return <h1>{time}</h1>
 // }
 
-// //Refractoring code to 
+
+// //Refractoring code to \\
+
 // function App() {
 //     return <h1>{new Date().toLocaleTimeString()}</h1>
 // }
 
 
-// Displaying multiple variables and plain text
-function App() {
-    const name = "Julia";
-    const age = 2;
+// DISPLAYING MORE THAN ONE VARIABLE + TEXT IN A COMPONENT \\
 
-    return <h1>Hi, my name is {name} im {age} years old</h1>
+// function App() {
+//     const name = "Julia";
+//     const age = 2;
+
+//     return <h1>Hi, my name is {name} im {age} years old</h1>
+// }
+
+
+// REQUESTONG A NUMBER INPUT FROM USER IN A COMPONENT \\
+
+function App() {
+    const inputType = "number";
+    const minValue = 5;
+
+    return <input type={inputType} min={minValue} />;
 }
+// Setting the min value to 5 here will never allow the 
+//value to go below 5 in the browser. try in broswer. 
+
 
