@@ -61,7 +61,7 @@ we need the above libraries to show a component on the screen
 
          const root = ReactDOM.createRoot(el);
 
-    4)  Create a component
+    4)  Create a component *** MODIFIED BELOW ***
 
         components are just functions that return JSX
     
@@ -72,3 +72,26 @@ we need the above libraries to show a component on the screen
     5) Show the component on the screen. 
     root.render(<App/>);  
         APP is passed in as a JSX element
+
+     
+    ** STEP 4 UPDATED ** 
+        Creating a Component    
+            1. Create a new file (in Source (src) Directory)
+                by convension file shold start with capital letters
+              ~ App.js
+
+            2. Make your component. Should be a function that returns JSX
+              ~ function App() {
+                    retun <h1>Hi Julia</h1>
+                }
+            3. Export the component at the bottom of your page
+              ~ export default App;
+            
+            4. Import the Conponent into another file
+              ~ import App from "./App";
+            
+            5. Use the Component
+                <App/>
+
+
+
