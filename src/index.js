@@ -71,9 +71,15 @@ function App() {
     const inputType = "number";
     const minValue = 5;
 
-    return <input type={inputType} min={minValue} />;
+    return <input style={{border: "3px solid red"}}
+            type={inputType} 
+            min={minValue} 
+        />;
 }
 // Setting the min value to 5 here will never allow the 
 //value to go below 5 in the browser. try in broswer. 
+
+// // the varialbe can also be written directly in the return statement
+// return <input type="number" min={5} />;
 
 
