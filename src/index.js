@@ -36,8 +36,24 @@ root.render(<App/>);
 //     return <h1>Hi there!</h1>
 // }
 
+// funciton to display local time
+// function App() {
+//     const date = new Date();
+//     const time = date.toLocaleTimeString(); 
+//         return <h1>{time}</h1>
+// }
+
+// //Refractoring code to 
+// function App() {
+//     return <h1>{new Date().toLocaleTimeString()}</h1>
+// }
+
+
+// Displaying multiple variables and plain text
 function App() {
-    const date = new Date();
-    const time = date.toLocaleTimeString(); 
-        return <h1>{time}</h1>
+    const name = "Julia";
+    const age = 2;
+
+    return <h1>Hi, my name is {name} im {age} years old</h1>
 }
+
